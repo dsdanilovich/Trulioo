@@ -1,0 +1,5 @@
+GET /connection/v1/testauthentication HTTP/1.1
+Host: api.globaldatacompany.com
+Authorization: Basic RGVsdGVjX0RlbW9fQVBJIDpEZWx0ZWNAMjAxOEVV
+Cache-Control: no-cache
+Postman-Token: 5a36250a-e226-479a-9901-48d215d60a68
