@@ -3,7 +3,7 @@ Host: api.globaldatacompany.com
 Content-Type: application/json
 Authorization: Basic RGVsdGVjX0RlbW9fQVBJIDpEZWx0ZWNAMjAxOEVV
 Cache-Control: no-cache
-Postman-Token: 479fc5c5-b790-4062-888e-bc20db9bd3ff
+Postman-Token: 162901b4-34b4-4060-a9cd-85f5e4bc0756
 
 {
   "AcceptTruliooTermsAndConditions": true,
@@ -20,10 +20,10 @@ Postman-Token: 479fc5c5-b790-4062-888e-bc20db9bd3ff
       "YearOfBirth": "1978"
     },
     "Location": {
-      "PostalCode": "1930"
-    },
-    "Business": {}
+      "PostalCode": "1930",
+      "AdditionalFields": {
+        "Address1": "Hoge Wei 68"
+      }
+    }
   }
- }
-  
- 
+}
