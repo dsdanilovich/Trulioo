@@ -1,0 +1,66 @@
+{
+    "TransactionID": "3af20c13-eb7e-4737-a31d-f6e38078e0b4",
+    "UploadedDt": "2018-07-25T10:38:56",
+    "CountryCode": "BE",
+    "ProductName": "Identity Verification",
+    "Record": {
+        "TransactionRecordID": "b822b980-c22d-4239-aedc-d2d82103c034",
+        "RecordStatus": "match",
+        "DatasourceResults": [
+            {
+                "DatasourceName": "Belgium Citizen",
+                "DatasourceFields": [
+                    {
+                        "FieldName": "City",
+                        "Status": "missing"
+                    },
+                    {
+                        "FieldName": "PostalCode",
+                        "Status": "match"
+                    },
+                    {
+                        "FieldName": "FirstInitial",
+                        "Status": "match"
+                    },
+                    {
+                        "FieldName": "DayOfBirth",
+                        "Status": "match"
+                    },
+                    {
+                        "FieldName": "BuildingNumber",
+                        "Status": "match"
+                    },
+                    {
+                        "FieldName": "MonthOfBirth",
+                        "Status": "match"
+                    },
+                    {
+                        "FieldName": "YearOfBirth",
+                        "Status": "match"
+                    },
+                    {
+                        "FieldName": "FirstGivenName",
+                        "Status": "match"
+                    },
+                    {
+                        "FieldName": "StreetName",
+                        "Status": "match"
+                    },
+                    {
+                        "FieldName": "FirstSurName",
+                        "Status": "match"
+                    }
+                ],
+                "AppendedFields": [],
+                "Errors": [],
+                "FieldGroups": []
+            },
+        ],
+        "Errors": [],
+        "Rule": {
+            "RuleName": "Category 3 KYC v3",
+            "Note": "Match(FamilyAndGivenInitial, DOB) or Match(FamilyAndGivenInitial, FullAddress) or Match(FamilyAndGivenInitial, ID) MiddleName Ignored"
+        }
+    },
+    "Errors": []
+}
