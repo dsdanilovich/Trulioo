@@ -1,0 +1,141 @@
+{
+    "InputFields": [
+        {
+            "FieldName": "City",
+            "Value": "Etterbeek"
+        },
+        {
+            "FieldName": "PostalCode",
+            "Value": "1040"
+        },
+        {
+            "FieldName": "FirstName",
+            "Value": "Elke"
+        },
+        {
+            "FieldName": "LastName",
+            "Value": "Willems"
+        },
+        {
+            "FieldName": "Address1",
+            "Value": "Clos de Etangs 6"
+        }
+    ],
+    "TransactionID": "0740e4ad-8059-4332-be54-87b0cf643555",
+    "UploadedDt": "2018-08-22T14:58:06",
+    "CountryCode": "BE",
+    "ProductName": "Identity Verification",
+    "Record": {
+        "TransactionRecordID": "86cae59a-03e7-4296-a9b4-f99b1976b993",
+        "RecordStatus": "nomatch",
+        "DatasourceResults": [
+            {
+                "DatasourceName": "Address Validation",
+                "DatasourceFields": [],
+                "AppendedFields": [
+                    {
+                        "FieldName": "State",
+                        "Data": "Brussel"
+                    },
+                    {
+                        "FieldName": "Country",
+                        "Data": "BE"
+                    },
+                    {
+                        "FieldName": "City",
+                        "Data": "Etterbeek"
+                    },
+                    {
+                        "FieldName": "PostalCode",
+                        "Data": "1040"
+                    },
+                    {
+                        "FieldName": "Address1",
+                        "Data": "Clos Des Étangs 6 "
+                    },
+                    {
+                        "FieldName": "HouseNumber",
+                        "Data": "6"
+                    },
+                    {
+                        "FieldName": "StreetName",
+                        "Data": "Des Étangs"
+                    }
+                ],
+                "Errors": [
+                    {
+                        "Code": "3001",
+                        "Message": "State / Province / County changed, please check Address validation fields for additional information"
+                    },
+                    {
+                        "Code": "3005",
+                        "Message": "One or more of Unit Number, Building Number, or Street are either invalid or missing"
+                    }
+                ],
+                "FieldGroups": []
+            },
+            {
+                "DatasourceName": "Belgium Citizen",
+                "DatasourceFields": [],
+                "AppendedFields": [],
+                "Errors": [],
+                "FieldGroups": []
+            },
+            {
+                "DatasourceName": "International Watchlist",
+                "DatasourceFields": [
+                    {
+                        "FieldName": "FirstGivenName",
+                        "Status": "missing"
+                    },
+                    {
+                        "FieldName": "MiddleName",
+                        "Status": "missing"
+                    },
+                    {
+                        "FieldName": "FirstSurName",
+                        "Status": "missing"
+                    },
+                    {
+                        "FieldName": "YearOfBirth",
+                        "Status": "missing"
+                    }
+                ],
+                "AppendedFields": [
+                    {
+                        "FieldName": "WatchlistState",
+                        "Data": "Clear"
+                    },
+                    {
+                        "Data": [],
+                        "FieldName": "WatchlistHitDetails"
+                    }
+                ],
+                "Errors": [],
+                "FieldGroups": []
+            },
+            {
+                "DatasourceName": "Passport MRZ Validation",
+                "DatasourceFields": [],
+                "AppendedFields": [],
+                "Errors": [
+                    {
+                        "Code": "1001",
+                        "Message": "Missing required field: PassportMRZLine1"
+                    },
+                    {
+                        "Code": "1001",
+                        "Message": "Missing required field: PassportMRZLine2"
+                    }
+                ],
+                "FieldGroups": []
+            }
+        ],
+        "Errors": [],
+        "Rule": {
+            "RuleName": "RuleScript NameAddressDoB",
+            "Note": "Script manually created"
+        }
+    },
+    "Errors": []
+}
